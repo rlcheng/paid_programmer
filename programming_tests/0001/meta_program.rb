@@ -14,4 +14,13 @@ class MetaProgram
   def initialize(h)
     @h = h
   end
+  def this
+    this = @h["this"]
+  end
+  def that
+    that = @h["that"]
+  end
+  def where
+    where = @h["where"]
+  end  
 end

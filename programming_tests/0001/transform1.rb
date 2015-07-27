@@ -15,6 +15,6 @@ class Transform1
   end
 
   def to_hash
-    #code goes here
+    hash1 = eval(@str)
   end
 end

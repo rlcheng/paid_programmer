@@ -1,7 +1,6 @@
+require 'rails_helper'
+
 describe "0001 tests" do
-  before do
-    @files = Dir.glob(File.join(File.dirname(__FILE__), "../programming_tests/0001/*")).map{|f| require(f)}
-  end
 
   context "Transform1" do
     it "should equal the expected output" do
