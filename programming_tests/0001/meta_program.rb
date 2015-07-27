@@ -6,7 +6,7 @@
 
   where h = {"this" => "that", "that" => "other", "where" => "here"}
 
-  and m.this == "this", m.that == "other", m.where == "here"
+  and m.this == "that", m.that == "other", m.where == "here"
 
 =end
 
