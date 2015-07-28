@@ -10,6 +10,12 @@
 
 =end
 
+# Not quite what I was looking for here. There are several ways to say
+# m = MetaProgram.new(h) for any hash -- not just the hash I supplied --
+# and then me able to say m.this, and get h["this"].
+# In other words, should not be writing your three instance methods this,
+# that and where -- these methods can be dynamically created in Ruby.
+
 class MetaProgram
   def initialize(h)
     @h = h

@@ -6,6 +6,7 @@ describe "0001 tests" do
     it "should equal the expected output" do
       s = '{first: "Stephen", last: "King", joined: ["first", "2015-07-26T16:06:41-07:00"]}'
       t = Transform1.new(s)
+      byebug
       expect(t.to_hash).to eq({first: "Stephen", last: "King", joined: ["first", "2015-07-26T16:06:41-07:00"]})
     end
   end
