@@ -16,17 +16,14 @@
 # In other words, should not be writing your three instance methods this,
 # that and where -- these methods can be dynamically created in Ruby.
 
+# Fixed now. Sorry I totally missed the point of this exercise. The title
+# of the file should have been the obvious clue.
+
 class MetaProgram
   def initialize(h)
     @h = h
+    @h.each do |key, value|
+      self.class.send(:define_method,key) {value}
+    end
   end
-  def this
-    this = @h["this"]
-  end
-  def that
-    that = @h["that"]
-  end
-  def where
-    where = @h["where"]
-  end  
 end
